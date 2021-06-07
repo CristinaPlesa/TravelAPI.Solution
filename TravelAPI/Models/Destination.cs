@@ -15,6 +15,9 @@ namespace TravelAPI.Models
         public string CityName { get; set; }
         [Required]
         public string Review { get; set; }
+        [Required]
+        [Range(1, 5, ErrorMessage = "Rate must be a number between 1 and 5")]
+        public int RateReview { get; set; }
 
     }
 }
