@@ -19,9 +19,9 @@ namespace TravelAPI.Controllers
     {
       _db = db;
     }
-    
+
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Destination>>> Get(string countryName, string cityName,DateTime travelDate ,string review)
+    public async Task<ActionResult<IEnumerable<Destination>>> Get(string countryName, string cityName, string review)
     {
       var query = _db.Destinations.AsQueryable();
       if(countryName != null)
@@ -31,10 +31,6 @@ namespace TravelAPI.Controllers
       if(cityName != null)
       {
         query = query.Where(entry => entry.CityName == cityName);
-      }
-      if(travelDate != null)
-      {
-        query = query.Where(entry => entry.TravelDate == travelDate);
       }
       if(review != null)
       {
