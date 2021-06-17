@@ -57,3 +57,8 @@
 Please reach out through my GitHub account.
 [github.com/CristinaPlesa](https://github.com/CristinaPlesa)
 [github.com/sammaicodes](https://github.com/sammaicodes)
+
+<!-- - run this command in project directory.
+dotnet add ParksAPI.csproj package Swashbuckle.AspNetCore -v 5.6.3
+- then use dotnet run, and navigate to localhost:5000/swagger
+- can also navigate to localhost:5000/swagger/v1/swagger.json, to view raw json data structure -->
